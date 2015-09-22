@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css"
+      href="/modules/skill_map/resources/dependo-0.1.4/cb/dependency_graph.css">
+
+<div class="graph" data-nodes="{{ nodes }}" data-links="{{ links }}">
+<div class="control-zoom">
+  <a class="control-zoom-in" href="#" title="Zoom in"></a>
+  <a class="control-zoom-out" href="#" title="Zoom out"></a>
+</div>
+</div>
+
+<script src="/modules/skill_map/resources/d3-3.4.3/d3.min.js" charset="utf-8"></script>
+<script src="/modules/skill_map/resources/underscore-1.4.3/underscore.min.js"></script>
+<script src="/modules/skill_map/resources/dependo-0.1.4/cb/dependency_graph.js"></script>
+<script>
+  var getGraphData = function () {
+    return {
+      'directed': true,
+      'multigraph': false,
+      'graph': [],
+      'nodes': $('div.graph').data('nodes'),
+      'links': $('div.graph').data('links')
+    };
+  };
+
+  $(function() {
+    setupGraph();
+  });
+</script>
+

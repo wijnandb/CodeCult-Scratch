@@ -1,0 +1,718 @@
+body {
+  background-color: #f5f5f5;
+}
+form {
+  display: inline;
+}
+
+/* Undo MDL typography module styles.
+When we decide to use their typography rules, we may be able to remove some of
+these rules.
+ */
+
+html, body, table, td, th, p {
+  font-family: arial,sans-serif;
+  font-size: 13px;
+}
+html, body {
+  font-weight: inherit;
+  line-height: inherit;
+}
+body, h3 {
+  margin: 0px;
+  padding: 0px;
+}
+ul,ol {
+  font-weight: inherit;
+  letter-spacing: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+h1,h2,h3,h4,h5 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.17em;;
+}
+h2 {
+  font-size: 1.5em;
+}
+a {
+  color: rgb(0, 0, 238);
+}
+iframe {
+  border: 2px inset;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em 0.75em;
+}
+
+/* end MDL overrides */
+
+table {
+  width: 100%;
+  border-width: 1px;
+  border-spacing: 2px;
+  border-style: outset;
+  border-color: gray;
+  border-collapse: collapse;
+}
+table th {
+  border-width: 1px;
+  padding: 4px;
+  background-color: #f5f5f5;
+  border-style: inset;
+  border-color: gray;
+  text-align: center;
+}
+table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: inset;
+  border-color: gray;
+}
+
+div#gcb-main-area {
+  text-align: center;
+  padding-top: 12px;
+  position: relative;
+}
+div#gcb-section {
+  padding-bottom: 4px;
+}
+div#gcb-main-content {
+  padding: 32px;
+  text-align: left;
+}
+div#gcb-main-content li {
+  margin: 1px 0px;
+}
+div#gcb-footer {
+  text-align: center;
+  font-size: smaller;
+  padding: 4px;
+  border-top: solid 1px #607D8B;
+  background-color: #f5f5f5;
+}
+h2 {
+  margin-left: 32px;
+}
+.section + .section {
+  margin-top: 40px;
+}
+h3 {
+  color: #37474F;
+}
+p.page-description {
+  margin: 0;
+  padding: 0.4em 0 0 1em;
+  width: 40em;
+  text-align: left;
+}
+p.page-description, p.description {
+  font-size: 80%;
+  color: #666;
+}
+div#formContainer {
+  margin: 0;
+}
+.gcb-button {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 12px;
+  background-color: #37474F;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: normal;
+  cursor: default;
+}
+.gcb-button-toolbar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.gcb-icon-button {
+  padding-top:0;
+  padding-bottom:0;
+  padding-left: 8px;
+  line-height: 20px;
+}
+.gcb-icon-button .icon {
+  color: inherit;
+  padding:0;
+  background-color: transparent;
+  cursor: inherit;
+}
+.gcb-icon-button span {
+  vertical-align: middle;
+}
+
+.gcb-pull-right {
+  float: right;
+}
+#gcb-section pre {
+  padding: 0px;
+  margin: 0px;
+}
+span.draft-label {
+  color: #999;
+}
+.strong {
+  font-weight: bold;
+}
+
+
+/* CSS for lists of items in the Course settings editor. */
+
+div.settings-list {
+  width: 500px;
+  float: left;
+}
+div.new-form-layout div.settings-list.wide {
+  width: inherit;
+  float: none;
+  margin-left: 90px;
+  min-width: 700px;
+}
+div.new-form-layout div.settings-list.wide > span:first-child {
+  display: none;
+}
+div.settings-list > div.inputEx-ListField-childContainer > div {
+  margin-top: 15px;
+}
+div.settings-list a.inputEx-List-link {
+  color: #000;
+  background-color: #f2f2f2;
+  border: solid #808080 1px;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 10px;
+  margin-left: 0px;
+}
+div.new-form-layout div.settings-list a.inputEx-List-link {
+  color: #fff;
+  background-color: #666;
+  font-weight: normal;
+  border-radius: 3px;
+  padding: 3px 10px;
+}
+div.settings-list a:hover {
+  text-decoration: none;
+}
+div.settings-list-item {
+  margin-left: 0px;
+  width: 100%;
+}
+div.settings-list-item + a {
+  float: right;
+  margin-top: -10px;
+  margin-right: 7px;
+}
+div.new-form-layout div.settings-list-item > fieldset > div.inputEx-fieldWrapper {
+  padding: 15px 0 0 0;
+}
+div.settings-list-item > fieldset > div > div.inputEx-Field {
+  width: auto;
+  min-width: 325px;
+}
+div.settings-list-item select {
+  max-width: 220px;
+}
+div.settings-list-item input[type="text"] {
+  width: 300px;
+  border-left: solid 1px #999;
+}
+div.settings-list-item div.inputEx-description {
+  width: 250px;
+}
+div.settings-list > div.inputEx-description {
+  margin-top: 10px;
+}
+div#formContainer div.settings-list-item fieldset {
+  border: solid #999 1px;
+  margin-left: 0px;
+}
+div#formContainer div.new-form-layout div.settings-list-item fieldset {
+  border: solid #ddd 1px;
+  border-radius: 3px;
+}
+div#formContainer div.settings-list-item fieldset legend span {
+  font-weight: normal;
+}
+.icon {
+  display: inline-block;
+  border: none;
+  vertical-align: middle;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 4px;
+  color: #555;
+  background-color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon.inactive {
+  cursor: auto;
+}
+.assets-table-container {
+  max-height: 400px;
+  overflow: auto;
+  overflow-y: scroll;
+  margin: 0px 0px 20px 0px;
+  border: solid 1px;
+}
+.assets-table {
+  border-style: hidden;
+  border-right-style: solid;
+}
+.assets-table td {
+  padding: 4px 10px;
+  vertical-align: top;
+}
+.assets-table th {
+  padding: 5px 15px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+.assets-table li {
+  margin: 0px;
+}
+.assets-table .md-arrow-drop-up,
+.assets-table .md-arrow-drop-down {
+  display: none;
+}
+.assets-table .sort-asc .md-arrow-drop-up,
+.assets-table .sort-desc .md-arrow-drop-down {
+  display: inline;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.assets-table ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.assets-table span.count {
+  font-style: italic;
+}
+#modal-window {
+  display: none;
+}
+#modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 1000;
+}
+#modal-container {
+  border: 2px inset;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  width: 780px;
+  margin-left: -410px;
+  z-index: 1010;
+  background-color: #fff;
+  padding: 20px;
+}
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #888;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 5px;
+}
+#modal-container > div > iframe {
+  width: 100%;
+  border: none;
+}
+.filter-container {
+  position: relative;
+  overlfow: auto;
+}
+#add-to-group form div {
+  display: inline-block;
+  text-align: left;
+}
+.filter-popup {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 26px;
+  width: 470px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 10px;
+  -mozkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.form-popup label span {
+  display: inline-block;
+  width  : 120px;
+  text-align: right;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.form-popup input[type="text"] {
+  width: 216px;
+  margin: 0px;
+}
+.form-popup input[type="checkbox"] {
+  margin: 3px 0px;
+}
+.form-popup select, .form-popup label span.uneditable-field {
+  text-align: left;
+  width: 220px;
+  margin: 0px;
+}
+.form-popup .buttons {
+  margin-left: 121px;
+}
+.form-popup .buttons .gcb-button {
+  display: inline-block;
+}
+.form-popup > fieldset {
+  border:none;
+  border-top: solid 1px #999999;
+}
+.form-popup legend {
+  color: #505050;
+  font-weight: bold;
+  text-align: left;
+}
+li.activity-item {
+  list-style-type: square;
+}
+span.course-title {
+  display: inline-block;
+  font-weight: bold;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+span.down-arrow {
+  margin: 0 0 3px 5px;
+  width: 10px;
+  height: 5px;
+  display: inline-block;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEIEgAQ1X1ifwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAABgSURBVAjXdcqxDYNAEAXRWRBEdEEJlOAOXIBLwh3RADUQk5Fdhm5IzoCQPNJu8l/knKuI6IAaEKiABohyO7CRUmrV0f99uae+1eUGVvVTtvIuPKiTOquvHzrNA/dqz6MD5qlhajDm5qkAAAAASUVORK5CYII=);
+}
+div.current-course {
+  color: #666;
+  background-color: white;
+  padding: 9px 11px;
+}
+/* Styles for role editor */
+div.permission-module {
+  display: inline-block;
+}
+div.permission-item.inputEx-ListField-subFieldEl {
+  margin: 0;
+  margin-bottom: 8px;
+}
+div.permission-item input {
+  margin: 1px 5px 0px 0px;
+}
+div.permission-item .inputEx-label,
+div.permission-item label,
+div.permission-item .inputEx-Group-legend,
+div.permission-module .inputEx-List-link {
+  display: none;
+}
+div.permission-item .inputEx-fieldWrapper {
+  display: inline-block;
+  vertical-align: text-top;
+  margin: 0;
+}
+.permission-label {
+  display: inline;
+}
+.permission-name {
+  display: none;
+}
+div#formContainer fieldset .permission-item fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.settings-section {
+  width: 700px;
+  margin: auto;
+}
+.settings-section-title {
+  font-weight: bold;
+  padding-left: 1em;
+  background-color: #eee;
+  color: #555;
+}
+.settings-section-content {
+  margin-left: 2em;
+}
+.settings-property {
+  margin: 8px;
+}
+.settings-property-label {
+  float: left;
+  padding-right: 1em;
+  width: 130px;
+  text-align: right;
+  color: #555;
+}
+.settings-property-box {
+  float: left;
+  width: 500px;
+}
+.settings-property-value {
+  border-left: 1px solid #999;
+  color: #555;
+  background: #EEE;
+  padding: 3px;
+  min-height: 1em;
+}
+.settings-property-descr {
+  font-size: 75%;
+  color: #555;
+}
+.settings-property-clear {
+  clear: both;
+}
+
+div.codemirror-container-readonly {
+    padding-bottom: 1.5em;
+}
+
+div.codemirror-container-readonly div.CodeMirror {
+    height: auto!important;
+}
+.title-text {
+  vertical-align: middle;
+}
+label.settings.togglebutton {
+  vertical-align: sub;
+}
+.gcb-message {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Collapse component
+
+Use this to build "zippy" menus.  Some JavaScript in view.js is required to
+calculate element heights on startup.  Re-run updateCollapse to recalculate it
+any time you create or modify some collapsible content.
+
+.gcb-collapse: Container
+.gcb-collapse--opened: Makes the contents visible
+.gcb-collapse__content: The contents that can be hidden
+.gcb-collapse__content-wrapper: Wraps and hides the contents
+.gcb-collapse__icon: An icon that will rotate on open and close
+.gcb-collapse__button: The clickable element
+.gcb-accordion: Wrap multiple collapses in this and they'll collapse their
+  neighbors when you open them.
+
+Minimal Example:
+<div class="gcb-collapse">
+  <a class="gcb-collapse__button">
+    <i class="gcb-collapse__icon material-icons mdl-animation--default">expand_more</i>
+    Click me to see the content
+  </a>
+  <div class="gcb-collapse__content-wrapper">
+    <div class="gcb-collapse__content mdl-animation--default">
+      This is the content
+    </div>
+  </div>
+</div>
+
+*/
+
+.gcb-collapse--opened {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: -1px;
+}
+
+.gcb-collapse--opened + .gcb-collapse--opened {
+  border-top: none;
+  margin-top: 0;
+}
+
+.gcb-collapse__content-wrapper {
+  overflow: hidden;
+}
+
+.gcb-collapse__content {
+  transition-property: margin-top;
+  transition-duration: 0.2s;
+}
+
+.gcb-collapse__button {
+  font-weight: bold;
+}
+
+.gcb-collapse__icon {
+  transition-property: transform;
+  transition-duration: 0.2s;
+  color: rgba(0,0,0,0.3);
+
+  /* TODO(nretallack): Some day, MDL should provide some facility for
+  positioning icons inside list items so we don't have to do this */
+  position: absolute;
+  right: 6px;
+  margin-top: -3px;
+}
+
+.gcb-collapse--opened .gcb-collapse__icon {
+  transform: rotate(-180deg);
+}
+
+.gcb-collapse--opened .gcb-collapse__content {
+  /* Overrides the inline style calculated by the JavaScript on startup */
+  margin-top: 0 !important;
+}
+
+/* end of collapse component */
+
+.mdl-layout__content {
+  overflow: auto;
+  background: #fff;
+}
+
+/* Drawer menu adjustments */
+.mdl-layout__drawer .mdl-navigation.gcb-menu .mdl-navigation__link {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+  color: inherit;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* current page indication */
+.mdl-layout__drawer .mdl-navigation.gcb-menu .mdl-navigation__link.gcb-active,
+.mdl-layout__drawer .mdl-navigation.gcb-menu .mdl-navigation__link.gcb-active:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.mdl-navigation.gcb-menu .gcb-active-group .gcb-collapse__button {
+  color: rgb(0, 150, 136);
+}
+
+/* adjustments for the header */
+.mdl-layout__header .mdl-navigation .mdl-navigation__link,
+.mdl-layout__header a {
+  color: inherit;
+}
+
+.mdl-layout__content {
+  z-index: auto;
+}
+
+@media screen and (min-width: 851px) {
+  .mdl-layout__drawer-button {
+    display: none;
+  }
+  .mdl-layout__header-row {
+    padding-left: 40px;
+  }
+}
+
+.mdl-layout__header {
+  position: relative;
+}
+
+.mdl-layout__drawer .mdl-layout-title {
+  padding-left: 30px;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+@media screen and (max-width: 850px) {
+  .mdl-layout__drawer .mdl-layout-title {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.gcb-drawer-header {
+  background:  white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* indent sub-menus */
+.mdl-layout__drawer .mdl-navigation.gcb-menu .gcb-menu .mdl-navigation__link {
+  padding-left: 45px;
+}
+
+/* Course Picker stuff */
+.gcb-course-picker.mdl-navigation.gcb-menu {
+  padding-top: 0;
+}
+
+.gcb-course-picker.gcb-collapse.gcb-collapse--opened {
+  border-bottom: none;
+  border-top: none;
+  margin-top: 0;
+}
+
+/* eliminate extra borders in the menu */
+
+#nav-menu .gcb-collapse:first-of-type {
+  border-top: 0;
+  margin-top: 0;
+}
+
+#nav-menu .gcb-collapse:last-of-type {
+  border-bottom: 0;
+}
+
+/* Call out the Site Admin menu */
+
+.gcb-page--dashboard #menu-group__admin {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.gcb-page--dashboard #menu-group__help {
+  border-bottom: 0;
+}
+
+/* Stuff on the site-admin page */
+
+.gcb-page--admin .mdl-layout__header {
+  background-color: rgb(103, 58, 183);
+}
+
+.gcb-page--admin .mdl-navigation.gcb-menu .gcb-active-group .gcb-collapse__button {
+  color: rgb(103, 58, 183);
+}
